@@ -1,0 +1,15 @@
+function [confusionMatrix, nGoodCat] = multiClassPrediction(predictclassifieurs, imCatTest)
+    nbCat = size(imCatTest,1); %nombre de catégories
+    
+    nGoodCat = zeros(nbCat);
+    confusionMatrix = zeros(nbCat, nbCat);
+    
+    [max, argmax] = max(predictclassifieurs);
+    debut = 0
+    for i=1:nbCat
+        argMaxCat = argmax(debut, imCatTest(i))
+        
+        confusionMatrix
+        debut = imCatTest(i)
+    end
+end
