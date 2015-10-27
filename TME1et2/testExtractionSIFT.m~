@@ -1,0 +1,19 @@
+% Chargement d'un image
+[I , nomim]=randomImage('/users/nfs/Etu4/3101314/M2/RDFIA/TME1et2/Scene/');
+
+% Création des masques de Sobel
+Mx=[-1 0 1; -2 0 2; -1 0 1];
+My=[-1 -2 -1; 0 0 0; 1 2 1];
+
+% Calcul du gradient de l'image
+[J]=convolution_separable(I,Mx,My);
+figure();
+colormap('gray');
+imagesc(J);
+% Calcul de l'orientation du gradient
+
+% Calcul du masque Gaussien
+
+% Calcul du decripteur SIFT
+
+% Visualisation du calcul du descripteur

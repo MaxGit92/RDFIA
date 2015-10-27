@@ -1,0 +1,7 @@
+function [newcenters , erreur , movecenters ] = miseAJourKMeans(listPts
+, centers , nc)
+    for i=1:size(nc,1)
+        
+        
+    end
+end

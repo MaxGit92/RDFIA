@@ -1,0 +1,7 @@
+%[I,n,m]= ouvrirImage('/users/nfs/Etu4/3101314/M2/RDFIA/TME1et2/Scene/bedroom/image_0123.jpg');
+%figure();
+%colormap('gray');
+%imagesc(I); 
+
+%echantillonage(I,16,8);
+
